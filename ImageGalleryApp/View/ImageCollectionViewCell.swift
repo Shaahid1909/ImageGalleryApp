@@ -22,7 +22,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         contentView.addSubview(imageView)
         
-        // Set the background color to adapt to dark mode
+
         contentView.backgroundColor = UIColor.systemBackground
     }
     
@@ -36,7 +36,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
     }
     
     func configure(with url: String) {
-        // Use SDWebImage to load the image and support placeholder
+        
         imageView.sd_setImage(with: URL(string: url), placeholderImage: UIImage(systemName: "photo"))
     }
 }
